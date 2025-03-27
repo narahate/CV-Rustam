@@ -9,86 +9,138 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
             background: #0A192F;
             color: #CCD6F6;
-            text-align: center;
-        }
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-            background: #112240;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
-        }
-        .header {
+            margin: 0;
+            padding: 0;
             display: flex;
-            align-items: center;
             justify-content: center;
-            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
         }
-        .profile-img {
+
+        .container {
+            background: #112240;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 80%;
+            max-width: 900px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            margin-bottom: 10px;
-            border: 3px solid #64FFDA;
+            border: 5px solid #64FFDA;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
         }
-        h1, h2 {
+
+        .header img:hover {
+            transform: scale(1.1);
+        }
+
+        .header h1 {
             color: #64FFDA;
+            font-size: 2.5rem;
+            margin-bottom: 5px;
         }
+
+        .header p {
+            color: #A8B2D1;
+            font-size: 1.1rem;
+        }
+
         .section {
-            text-align: left;
             margin-bottom: 30px;
             padding: 20px;
             background: #233554;
-            border-radius: 8px;
+            border-radius: 10px;
         }
+
         .section h2 {
+            color: #64FFDA;
             border-bottom: 2px solid #64FFDA;
-            padding-bottom: 5px;
+            padding-bottom: 10px;
             margin-bottom: 15px;
         }
+
         .section p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .section ul li {
             margin: 5px 0;
         }
+
         .contact-info {
+            font-size: 1rem;
             text-align: left;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .contact-info strong {
+            color: #64FFDA;
+        }
+
+        footer {
+            text-align: center;
             margin-top: 20px;
-            font-size: 16px;
+            font-size: 1rem;
+            color: #A8B2D1;
         }
     </style>
 </head>
 <body>
     <div class="container" data-aos="fade-up">
-        <div class="header">
-            <img src="profile.jpg" alt="Rustam Aksenov" class="profile-img" data-aos="fade-down">
-            <h1 data-aos="fade-down">Rustam Aksenov</h1>
-            <p data-aos="fade-down">IT Specialist | Cybersecurity | Helpdesk</p>
+        <div class="header" data-aos="fade-down">
+            <img src="profile.jpg" alt="Rustam Aksenov">
+            <h1>Rustam Aksenov</h1>
+            <p>IT Specialist | Cybersecurity Expert | Helpdesk Professional</p>
         </div>
 
         <div class="section" data-aos="fade-up">
             <h2>Work Experience</h2>
-            <p><strong>Fortis Group & Ugur Logistik</strong> (08.02.2024 - 25.03.2025)</p>
-            <p><strong>Helpdesk - GIK, User Tracking Amburan Mall (Pasha Holding LLC)</strong> (01.06.2022 – 02.05.2023)</p>
-            <p><strong>Helpdesk - Vostok Group</strong> (07.05.2023 – 15.09.2023)</p>
-            <p><strong>Insol IT Group</strong> (16.03.2022 - 20.03.2025)</p>
+            <ul>
+                <li><strong>Fortis Group & Ugur Logistik</strong> (08.02.2024 - 25.03.2025) - Helpdesk & IT Support</li>
+                <li><strong>Helpdesk - GIK, User Tracking Amburan Mall (Pasha Holding LLC)</strong> (01.06.2022 – 02.05.2023)</li>
+                <li><strong>Helpdesk - Vostok Group</strong> (07.05.2023 – 15.09.2023)</li>
+                <li><strong>Insol IT Group</strong> (16.03.2022 - 20.03.2025) - IT Support</li>
+            </ul>
         </div>
 
         <div class="section" data-aos="fade-right">
             <h2>Education</h2>
-            <p><strong>Azerbaijan State Oil and Industry University</strong> - Industrial and Technology College</p>
-            <p><strong>Western Caspian University</strong> - Faculty of Information Technology</p>
-            <p><strong>Step IT Academy</strong> - Faculty of Cybersecurity</p>
+            <ul>
+                <li><strong>Azerbaijan State Oil and Industry University</strong> - Industrial and Technology College</li>
+                <li><strong>Western Caspian University</strong> - Faculty of Information Technology</li>
+                <li><strong>Step IT Academy</strong> - Faculty of Cybersecurity</li>
+            </ul>
         </div>
 
         <div class="section" data-aos="fade-left">
             <h2>Training & Certifications</h2>
-            <p><strong>CompTIA A+</strong> (220-1101 & 220-1102)</p>
-            <p><strong>MD-102: Endpoint Administrator</strong></p>
+            <ul>
+                <li><strong>CompTIA A+</strong> (220-1101 & 220-1102)</li>
+                <li><strong>MD-102: Endpoint Administrator</strong></li>
+            </ul>
         </div>
 
         <div class="section contact-info" data-aos="zoom-in">
@@ -99,6 +151,10 @@
             <p><strong>Nationality:</strong> Azerbaijani</p>
             <p><strong>Date of Birth:</strong> 10/09/2003</p>
         </div>
+
+        <footer data-aos="fade-up">
+            <p>Designed by Rustam Aksenov</p>
+        </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
