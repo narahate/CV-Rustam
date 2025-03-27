@@ -1,241 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rustam Aksenov - IT Resume</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            flex-direction: column;
-            min-height: 100vh;
-            color: #333;
-            overflow-x: hidden; /* Убирает горизонтальный скроллинг */
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1100px;
-            background-color: #fff;
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            padding: 40px;
-            transition: width 0.3s ease;
-        }
-
-        .container:hover {
-            width: 100%;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .header img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid #00bcd4;
-            margin-bottom: 20px;
-            transition: transform 0.3s ease;
-        }
-
-        .header img:hover {
-            transform: scale(1.05);
-        }
-
-        .header h1 {
-            color: #00bcd4;
-            font-size: 2rem;
-            margin-bottom: 5px;
-        }
-
-        .header p {
-            color: #777;
-            font-size: 1rem;
-        }
-
-        .section {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center; /* Центрируем элементы */
-            margin-bottom: 40px;
-            padding: 20px;
-            background: #e9f2f8;
-            border-radius: 10px;
-            border-left: 5px solid #00bcd4;
-            transition: background 0.3s ease;
-        }
-
-        .section:hover {
-            background: #cbe9f5;
-        }
-
-        .section h2 {
-            color: #00bcd4;
-            border-bottom: 2px solid #00bcd4;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-            width: 100%;
-            text-align: center;
-        }
-
-        .section .item {
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: calc(33.33% - 40px); /* Три элемента в ряд */
-            transition: transform 0.3s ease;
-        }
-
-        .section .item:hover {
-            transform: translateY(-5px);
-        }
-
-        .section ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .section ul li {
-            margin: 5px 0;
-        }
-
-        .contact-info {
-            font-size: 1.1rem;
-            text-align: left;
-            margin-bottom: 40px;
-        }
-
-        .contact-info p {
-            margin: 10px 0;
-        }
-
-        .contact-info strong {
-            color: #00bcd4;
-        }
-
-        footer {
-            text-align: center;
-            font-size: 1rem;
-            color: #777;
-            margin-top: 40px;
-        }
-
-        /* Стили для адаптивности */
-        @media (max-width: 768px) {
-            .container {
-                width: 100%;
-                padding: 20px;
-            }
-            .header img {
-                width: 100px;
-                height: 100px;
-            }
-            .header h1 {
-                font-size: 1.8rem;
-            }
-
-            .section .item {
-                width: calc(50% - 20px); /* Два элемента в ряд на мобильных */
-            }
-        }
-
-        @media (max-width: 480px) {
-            .header h1 {
-                font-size: 1.5rem;
-            }
-
-            .section .item {
-                width: 100%; /* Один элемент в ряд на очень маленьких экранах */
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rustam Aksenov - IT Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      min-height: 100vh;
+      color: #333;
+      overflow-x: hidden;
+    }
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      transition: width 0.3s ease;
+      margin-top: 50px;
+    }
+    .container:hover {
+      width: 100%;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #00bcd4;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+    .header img:hover {
+      transform: scale(1.05);
+    }
+    .header h1 {
+      color: #00bcd4;
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+    .header p {
+      color: #777;
+      font-size: 1rem;
+    }
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 40px;
+      padding: 20px;
+      background: #e9f2f8;
+      border-radius: 10px;
+      border-left: 5px solid #00bcd4;
+      transition: background 0.3s ease;
+    }
+    .section:hover {
+      background: #cbe9f5;
+    }
+    .section h2 {
+      color: #00bcd4;
+      border-bottom: 2px solid #00bcd4;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+      width: 100%;
+      text-align: center;
+    }
+    .section .item {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: calc(33.33% - 40px);
+      transition: transform 0.3s ease;
+    }
+    .section .item:hover {
+      transform: translateY(-5px);
+    }
+    .section ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .section ul li {
+      margin: 5px 0;
+    }
+    .contact-info {
+      font-size: 1.1rem;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+    .contact-info p {
+      margin: 10px 0;
+    }
+    .contact-info strong {
+      color: #00bcd4;
+    }
+    footer {
+      text-align: center;
+      font-size: 1rem;
+      color: #777;
+      margin-top: 40px;
+    }
+    /* Адаптивные стили */
+    @media (max-width: 768px) {
+      .container {
+        width: 100%;
+        padding: 20px;
+      }
+      .header img {
+        width: 100px;
+        height: 100px;
+      }
+      .header h1 {
+        font-size: 1.8rem;
+      }
+      .section .item {
+        width: calc(50% - 20px);
+      }
+    }
+    @media (max-width: 480px) {
+      .header h1 {
+        font-size: 1.5rem;
+      }
+      .section .item {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container" data-aos="fade-up">
-        <div class="header" data-aos="fade-down">
-            <img src="profile.jpg" alt="Rustam Aksenov">
-            <h1>Rustam Aksenov</h1>
-            <p>IT Specialist | Cybersecurity Expert | Helpdesk Professional</p>
-        </div>
-
-        <div class="section" data-aos="fade-up">
-            <h2>Work Experience</h2>
-            <div class="item">
-                <strong>Fortis Group & Ugur Logistik</strong><br>
-                (08.02.2024 - 25.03.2025) - Helpdesk & IT Support
-            </div>
-            <div class="item">
-                <strong>Helpdesk - GIK, User Tracking Amburan Mall (Pasha Holding LLC)</strong><br>
-                (01.06.2022 – 02.05.2023)
-            </div>
-            <div class="item">
-                <strong>Helpdesk - Vostok Group</strong><br>
-                (07.05.2023 – 15.09.2023)
-            </div>
-            <div class="item">
-                <strong>Insol IT Group</strong><br>
-                (16.03.2022 - 20.03.2025) - IT Support
-            </div>
-        </div>
-
-        <div class="section" data-aos="fade-right">
-            <h2>Education</h2>
-            <div class="item">
-                <strong>Azerbaijan State Oil and Industry University</strong><br>
-                Industrial and Technology College
-            </div>
-            <div class="item">
-                <strong>Western Caspian University</strong><br>
-                Faculty of Information Technology
-            </div>
-            <div class="item">
-                <strong>Step IT Academy</strong><br>
-                Faculty of Cybersecurity
-            </div>
-        </div>
-
-        <div class="section" data-aos="fade-left">
-            <h2>Training & Certifications</h2>
-            <div class="item">
-                <strong>CompTIA A+</strong><br>
-                (220-1101 & 220-1102)
-            </div>
-            <div class="item">
-                <strong>MD-102: Endpoint Administrator</strong>
-            </div>
-        </div>
-
-        <div class="section contact-info" data-aos="zoom-in">
-            <h2>Contact Information</h2>
-            <p><strong>Email:</strong> aksenru@insol.az</p>
-            <p><strong>Phone:</strong> (+994) 559102015 (Work)</p>
-            <p><strong>Address:</strong> Baku, Azerbaijan</p>
-            <p><strong>Nationality:</strong> Azerbaijani</p>
-            <p><strong>Date of Birth:</strong> 10/09/2003</p>
-        </div>
-
-        <footer data-aos="fade-up">
-            <p>Designed by Rustam Aksenov</p>
-        </footer>
+  <div class="container" data-aos="fade-up">
+    <div class="header" data-aos="fade-down">
+      <!-- Фотография Rustam Aksenov -->
+      <img src="2DB273E4-2AD7-4F41-BA9B-47CBCB361F9B.jpg" alt="Rustam Aksenov">
+      <h1>Rustam Aksenov</h1>
+      <p>IT Specialist | Helpdesk Professional</p>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <div class="section" data-aos="fade-up">
+      <h2>Work Experience</h2>
+      <div class="item">
+        <strong>Fortis Group & Ugur Logistik</strong><br>
+        (08.02.2024 - 25.03.2025) - Helpdesk & IT Support
+      </div>
+      <div class="item">
+        <strong>Helpdesk - GIK, User Tracking Amburan Mall (Pasha Holding LLC)</strong><br>
+        (01.06.2022 – 02.05.2023)
+      </div>
+      <div class="item">
+        <strong>Helpdesk - Vostok Group</strong><br>
+        (07.05.2023 – 15.09.2023)
+      </div>
+      <div class="item">
+        <strong>Insol IT Group</strong><br>
+        (16.03.2022 - 20.03.2025) - IT Support
+      </div>
+    </div>
+
+    <div class="section" data-aos="fade-right">
+      <h2>Education</h2>
+      <div class="item">
+        <strong>Azerbaijan State Oil and Industry University</strong><br>
+        Industrial and Technology College
+      </div>
+      <div class="item">
+        <strong>Western Caspian University</strong><br>
+        Faculty of Information Technology
+      </div>
+      <div class="item">
+        <strong>Step IT Academy</strong><br>
+        Faculty of Cybersecurity
+      </div>
+      <div class="item">
+        <strong>School No. 26</strong>
+      </div>
+    </div>
+
+    <div class="section" data-aos="fade-left">
+      <h2>Training & Certifications</h2>
+      <div class="item">
+        <strong>CompTIA A+</strong><br>
+        (220-1101 & 220-1102)
+      </div>
+      <div class="item">
+        <strong>MD-102: Endpoint Administrator</strong>
+      </div>
+    </div>
+
+    <div class="section" data-aos="fade-up">
+      <h2>Volunteer Experience</h2>
+      <div class="item">
+        <strong>Formula 1 as a BCC volunteer</strong><br>
+        2023
+      </div>
+    </div>
+
+    <div class="section contact-info" data-aos="zoom-in">
+      <h2>Contact Information</h2>
+      <p><strong>Email:</strong> aksenru@insol.az</p>
+      <p><strong>Phone:</strong> (+994) 559102015 (Work)</p>
+      <p><strong>Address:</strong> Baku, Azerbaijan</p>
+      <p><strong>Nationality:</strong> Azerbaijani</p>
+    </div>
+
+    <footer data-aos="fade-up">
+      <p>Designed by Rustam Aksenov</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
