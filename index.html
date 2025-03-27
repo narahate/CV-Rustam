@@ -3,35 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My IT Resume</title>
+    <title>Rustam's IT Resume</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            background: #e3f2fd;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <h1 data-aos="fade-down">Rustam's IT Resume</h1>
+        
+        <div class="section" data-aos="fade-up">
+            <h2>Work Experience</h2>
+            <p>Fortis Group & Ugur Logistik (08.02.2024 - 25.03.2025)</p>
+            <p>Helpdesk - GIK, User Tracking Amburan Mall (Pasha Holding LLC) (01.06.2022 – 02.05.2023)</p>
+            <p>Helpdesk - Vostok Group (07.05.2023 – 15.09.2023)</p>
+            <p>Insol IT Group (16.03.2022 - 20.03.2025)</p>
+        </div>
 
-<header data-aos="fade-down">
-    <h1>My IT Resume</h1>
-</header>
+        <div class="section" data-aos="fade-right">
+            <h2>Education</h2>
+            <p>Azerbaijan State Oil and Industry University - Industrial and Technology College</p>
+            <p>Western Caspian University - Faculty of Information Technology</p>
+            <p>Step IT Academy - Faculty of Cybersecurity</p>
+        </div>
 
-<div class="section" data-aos="fade-up">
-    <p class="title">Name:</p>
-    <p>John Doe</p>
-</div>
+        <div class="section" data-aos="fade-left">
+            <h2>Training & Certifications</h2>
+            <p>CompTIA A+ (220-1101 & 220-1102)</p>
+            <p>MD-102: Endpoint Administrator</p>
+        </div>
 
-<div class="section" data-aos="fade-right">
-    <p class="title">Skills:</p>
-    <ul>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-    </ul>
-</div>
+        <div class="section" data-aos="zoom-in">
+            <h2>Contact Information</h2>
+            <p>Email: aksenru@insol.az</p>
+            <p>Phone: (+994) 559102015 (Work)</p>
+            <p>Address: Baku, Azerbaijan</p>
+        </div>
+    </div>
 
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-    AOS.init();  // Инициализация анимаций
-</script>
-
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
-
