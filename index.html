@@ -9,23 +9,25 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background: #0A192F;
-            color: #CCD6F6;
+            background: #f4f4f9;
+            color: #333;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             min-height: 100vh;
+            flex-direction: column;
         }
 
         .container {
-            background: #112240;
+            background: #fff;
             border-radius: 15px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             padding: 30px;
             width: 80%;
             max-width: 900px;
+            margin-top: 50px;
         }
 
         .header {
@@ -38,7 +40,7 @@
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            border: 5px solid #64FFDA;
+            border: 5px solid #00bcd4;
             margin-bottom: 20px;
             transition: all 0.3s ease;
         }
@@ -48,26 +50,32 @@
         }
 
         .header h1 {
-            color: #64FFDA;
+            color: #00bcd4;
             font-size: 2.5rem;
             margin-bottom: 5px;
         }
 
         .header p {
-            color: #A8B2D1;
+            color: #777;
             font-size: 1.1rem;
         }
 
         .section {
             margin-bottom: 30px;
             padding: 20px;
-            background: #233554;
+            background: #e9f2f8;
             border-radius: 10px;
+            border-left: 5px solid #00bcd4;
+            transition: background 0.3s ease;
+        }
+
+        .section:hover {
+            background: #cbe9f5;
         }
 
         .section h2 {
-            color: #64FFDA;
-            border-bottom: 2px solid #64FFDA;
+            color: #00bcd4;
+            border-bottom: 2px solid #00bcd4;
             padding-bottom: 10px;
             margin-bottom: 15px;
         }
@@ -97,19 +105,34 @@
         }
 
         .contact-info strong {
-            color: #64FFDA;
+            color: #00bcd4;
         }
 
         footer {
             text-align: center;
             margin-top: 20px;
             font-size: 1rem;
-            color: #A8B2D1;
+            color: #777;
         }
+
+        /* Добавление картинок в фон */
+        .tech-image {
+            width: 100%;
+            height: auto;
+            opacity: 0.15;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
     </style>
 </head>
 <body>
     <div class="container" data-aos="fade-up">
+        <!-- Фон с картинками сетевых технологий или компьютеров -->
+        <img src="https://www.w3schools.com/w3images/computer.jpg" alt="Tech Background" class="tech-image">
+        
         <div class="header" data-aos="fade-down">
             <img src="profile.jpg" alt="Rustam Aksenov">
             <h1>Rustam Aksenov</h1>
