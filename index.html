@@ -9,25 +9,24 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background: #f4f4f9;
-            color: #333;
+            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
-            align-items: flex-start;
-            min-height: 100vh;
+            align-items: center;
             flex-direction: column;
+            min-height: 100vh;
+            color: #333;
         }
 
         .container {
-            background: #fff;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            padding: 30px;
             width: 90%;
             max-width: 1200px;
-            margin-top: 50px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
             transition: width 0.3s ease;
         }
 
@@ -37,7 +36,7 @@
 
         .header {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
 
         .header img {
@@ -47,7 +46,7 @@
             object-fit: cover;
             border: 5px solid #00bcd4;
             margin-bottom: 20px;
-            transition: all 0.3s ease;
+            transition: transform 0.3s ease;
         }
 
         .header img:hover {
@@ -62,11 +61,14 @@
 
         .header p {
             color: #777;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
 
         .section {
-            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 40px;
             padding: 20px;
             background: #e9f2f8;
             border-radius: 10px;
@@ -83,12 +85,21 @@
             border-bottom: 2px solid #00bcd4;
             padding-bottom: 10px;
             margin-bottom: 15px;
+            width: 100%;
+            text-align: center;
         }
 
-        .section p {
-            font-size: 1rem;
-            line-height: 1.6;
-            margin: 10px 0;
+        .section .item {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: calc(33.33% - 20px);
+            transition: transform 0.3s ease;
+        }
+
+        .section .item:hover {
+            transform: translateY(-5px);
         }
 
         .section ul {
@@ -101,12 +112,13 @@
         }
 
         .contact-info {
-            font-size: 1rem;
+            font-size: 1.1rem;
             text-align: left;
+            margin-bottom: 40px;
         }
 
         .contact-info p {
-            margin: 5px 0;
+            margin: 10px 0;
         }
 
         .contact-info strong {
@@ -115,20 +127,9 @@
 
         footer {
             text-align: center;
-            margin-top: 20px;
             font-size: 1rem;
             color: #777;
-        }
-
-        /* Добавление картинок в фон */
-        .tech-image {
-            width: 100%;
-            height: auto;
-            opacity: 0.15;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
+            margin-top: 40px;
         }
 
         /* Стили для адаптивности */
@@ -144,20 +145,25 @@
             .header h1 {
                 font-size: 2rem;
             }
+
+            .section .item {
+                width: calc(50% - 20px);
+            }
         }
 
         @media (max-width: 480px) {
             .header h1 {
                 font-size: 1.5rem;
             }
+
+            .section .item {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container" data-aos="fade-up">
-        <!-- Фон с картинками сетевых технологий или компьютеров -->
-        <img src="https://www.w3schools.com/w3images/computer.jpg" alt="Tech Background" class="tech-image">
-        
         <div class="header" data-aos="fade-down">
             <img src="profile.jpg" alt="Rustam Aksenov">
             <h1>Rustam Aksenov</h1>
@@ -166,29 +172,49 @@
 
         <div class="section" data-aos="fade-up">
             <h2>Work Experience</h2>
-            <ul>
-                <li><strong>Fortis Group & Ugur Logistik</strong> (08.02.2024 - 25.03.2025) - Helpdesk & IT Support</li>
-                <li><strong>Helpdesk - GIK, User Tracking Amburan Mall (Pasha Holding LLC)</strong> (01.06.2022 – 02.05.2023)</li>
-                <li><strong>Helpdesk - Vostok Group</strong> (07.05.2023 – 15.09.2023)</li>
-                <li><strong>Insol IT Group</strong> (16.03.2022 - 20.03.2025) - IT Support</li>
-            </ul>
+            <div class="item">
+                <strong>Fortis Group & Ugur Logistik</strong><br>
+                (08.02.2024 - 25.03.2025) - Helpdesk & IT Support
+            </div>
+            <div class="item">
+                <strong>Helpdesk - GIK, User Tracking Amburan Mall (Pasha Holding LLC)</strong><br>
+                (01.06.2022 – 02.05.2023)
+            </div>
+            <div class="item">
+                <strong>Helpdesk - Vostok Group</strong><br>
+                (07.05.2023 – 15.09.2023)
+            </div>
+            <div class="item">
+                <strong>Insol IT Group</strong><br>
+                (16.03.2022 - 20.03.2025) - IT Support
+            </div>
         </div>
 
         <div class="section" data-aos="fade-right">
             <h2>Education</h2>
-            <ul>
-                <li><strong>Azerbaijan State Oil and Industry University</strong> - Industrial and Technology College</li>
-                <li><strong>Western Caspian University</strong> - Faculty of Information Technology</li>
-                <li><strong>Step IT Academy</strong> - Faculty of Cybersecurity</li>
-            </ul>
+            <div class="item">
+                <strong>Azerbaijan State Oil and Industry University</strong><br>
+                Industrial and Technology College
+            </div>
+            <div class="item">
+                <strong>Western Caspian University</strong><br>
+                Faculty of Information Technology
+            </div>
+            <div class="item">
+                <strong>Step IT Academy</strong><br>
+                Faculty of Cybersecurity
+            </div>
         </div>
 
         <div class="section" data-aos="fade-left">
             <h2>Training & Certifications</h2>
-            <ul>
-                <li><strong>CompTIA A+</strong> (220-1101 & 220-1102)</li>
-                <li><strong>MD-102: Endpoint Administrator</strong></li>
-            </ul>
+            <div class="item">
+                <strong>CompTIA A+</strong><br>
+                (220-1101 & 220-1102)
+            </div>
+            <div class="item">
+                <strong>MD-102: Endpoint Administrator</strong>
+            </div>
         </div>
 
         <div class="section contact-info" data-aos="zoom-in">
