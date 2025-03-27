@@ -25,9 +25,14 @@
             border-radius: 15px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             padding: 30px;
-            width: 80%;
-            max-width: 900px;
+            width: 90%;
+            max-width: 1200px;
             margin-top: 50px;
+            transition: width 0.3s ease;
+        }
+
+        .container:hover {
+            width: 100%;
         }
 
         .header {
@@ -126,6 +131,26 @@
             z-index: -1;
         }
 
+        /* Стили для адаптивности */
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 20px;
+            }
+            .header img {
+                width: 120px;
+                height: 120px;
+            }
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+        }
     </style>
 </head>
 <body>
