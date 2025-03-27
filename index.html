@@ -14,15 +14,16 @@
             padding: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             flex-direction: column;
             min-height: 100vh;
             color: #333;
+            overflow-x: hidden; /* Убирает горизонтальный скроллинг */
         }
 
         .container {
             width: 90%;
-            max-width: 1200px;
+            max-width: 1100px;
             background-color: #fff;
             border-radius: 15px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -40,8 +41,8 @@
         }
 
         .header img {
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
             border: 5px solid #00bcd4;
@@ -50,24 +51,25 @@
         }
 
         .header img:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
 
         .header h1 {
             color: #00bcd4;
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: 5px;
         }
 
         .header p {
             color: #777;
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
 
         .section {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
+            justify-content: center; /* Центрируем элементы */
             margin-bottom: 40px;
             padding: 20px;
             background: #e9f2f8;
@@ -94,7 +96,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            width: calc(33.33% - 20px);
+            width: calc(33.33% - 40px); /* Три элемента в ряд */
             transition: transform 0.3s ease;
         }
 
@@ -139,15 +141,15 @@
                 padding: 20px;
             }
             .header img {
-                width: 120px;
-                height: 120px;
+                width: 100px;
+                height: 100px;
             }
             .header h1 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
 
             .section .item {
-                width: calc(50% - 20px);
+                width: calc(50% - 20px); /* Два элемента в ряд на мобильных */
             }
         }
 
@@ -157,7 +159,7 @@
             }
 
             .section .item {
-                width: 100%;
+                width: 100%; /* Один элемент в ряд на очень маленьких экранах */
             }
         }
     </style>
