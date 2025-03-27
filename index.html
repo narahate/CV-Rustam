@@ -1,134 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rustam Aksenov - IT Specialist</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rustam Aksenov - IT Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      min-height: 100vh;
+      color: #333;
+      overflow-x: hidden;
+    }
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      transition: width 0.3s ease;
+      margin-top: 50px;
+    }
+    .container:hover {
+      width: 100%;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #00bcd4;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+    .header img:hover {
+      transform: scale(1.05);
+    }
+    .header h1 {
+      color: #00bcd4;
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+    .header p {
+      color: #777;
+      font-size: 1rem;
+    }
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 40px;
+      padding: 20px;
+      background: #e9f2f8;
+      border-radius: 10px;
+      border-left: 5px solid #00bcd4;
+      transition: background 0.3s ease;
+    }
+    .section:hover {
+      background: #cbe9f5;
+    }
+    .section h2 {
+      color: #00bcd4;
+      border-bottom: 2px solid #00bcd4;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+      width: 100%;
+      text-align: center;
+    }
+    .section .item {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: calc(33.33% - 40px);
+      transition: transform 0.3s ease;
+    }
+    .section .item:hover {
+      transform: translateY(-5px);
+    }
+    .section ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .section ul li {
+      margin: 5px 0;
+    }
+    .contact-info {
+      font-size: 1.1rem;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+    .contact-info p {
+      margin: 10px 0;
+    }
+    .contact-info strong {
+      color: #00bcd4;
+    }
+    footer {
+      text-align: center;
+      font-size: 1rem;
+      color: #777;
+      margin-top: 40px;
+    }
+    /* Адаптивные стили */
+    @media (max-width: 768px) {
+      .container {
+        width: 100%;
+        padding: 20px;
+      }
+      .header img {
+        width: 100px;
+        height: 100px;
+      }
+      .header h1 {
+        font-size: 1.8rem;
+      }
+      .section .item {
+        width: calc(50% - 20px);
+      }
+    }
+    @media (max-width: 480px) {
+      .header h1 {
+        font-size: 1.5rem;
+      }
+      .section .item {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="WhatsApp Image 2025-03-27 at 14.23.10_cc01e8ba.jpg" alt="Rustam Aksenov" class="profile-pic">
-            <h1>Rustam Aksenov</h1>
-            <h2>IT Specialist</h2>
-        </div>
-    </header>
+  <div class="container" data-aos="fade-up">
+    <div class="header" data-aos="fade-down">
+      <!-- Фотография Rustam Aksenov (новая) -->
+      <img src="WhatsApp Image 2025-03-27 at 14.23.10_cc01e8ba.jpg" alt="Rustam Aksenov">
+      <h1>Rustam Aksenov</h1>
+      <p>IT Specialist | Helpdesk Professional</p>
+    </div>
 
-    <section class="about" data-aos="fade-up">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Experienced IT Specialist with expertise in system administration, cybersecurity, and technical support.</p>
-        </div>
-    </section>
+    <div class="section" data-aos="fade-up">
+      <h2>Work Experience</h2>
+      <div class="item">
+        <strong>Fortis Group</strong><br>
+        (08.02.2024 - 25.03.2025) - IT Specialist
+      </div>
+      <div class="item">
+        <strong>Ugur Logistik</strong><br>
+        (10.04.2024 - 25.03.2025) - IT Specialist
+      </div>
+      <div class="item">
+        <strong>Helpdesk - GIK, User Tracking Amburan Mall (Pasha Holding LLC)</strong><br>
+        (01.06.2022 – 02.05.2023)
+      </div>
+      <div class="item">
+        <strong>Helpdesk - Vostok Group</strong><br>
+        (07.05.2023 – 15.09.2023)
+      </div>
+      <div class="item">
+        <strong>Insol IT Group</strong><br>
+        (16.03.2022 - 20.03.2025) - IT Support
+      </div>
+    </div>
 
-    <section class="experience" data-aos="fade-up">
-        <div class="container">
-            <h2>Work Experience</h2>
-            <div class="job-grid">
-                <div class="job-card">
-                    <h3>Fortis Group</h3>
-                    <p>IT Specialist</p>
-                    <span>08.02.2024 - 25.03.2025</span>
-                </div>
-                <div class="job-card">
-                    <h3>Ugur Logistik</h3>
-                    <p>IT Specialist</p>
-                    <span>10.04.2024 - 25.03.2025</span>
-                </div>
-                <div class="job-card">
-                    <h3>Insol IT Group</h3>
-                    <p>IT Specialist</p>
-                    <span>16.03.2022 - 20.03.2025</span>
-                </div>
-                <div class="job-card">
-                    <h3>Vostok Group</h3>
-                    <p>Helpdesk</p>
-                    <span>07.05.2023 - 15.09.2023</span>
-                </div>
-                <div class="job-card">
-                    <h3>Pasha Holding - Amburan Mall</h3>
-                    <p>User Tracking</p>
-                    <span>01.06.2022 - 02.05.2023</span>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="section" data-aos="fade-right">
+      <h2>Education</h2>
+      <div class="item">
+        <strong>Azerbaijan State Oil and Industry University</strong><br>
+        Industrial and Technology College
+      </div>
+      <div class="item">
+        <strong>Western Caspian University</strong><br>
+        Faculty of Information Technology
+      </div>
+      <div class="item">
+        <strong>Step IT Academy</strong><br>
+        Faculty of Cybersecurity
+      </div>
+      <div class="item">
+        <strong>School No. 26</strong>
+      </div>
+    </div>
 
-    <section class="education" data-aos="fade-up">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-grid">
-                <div class="education-card">
-                    <h3>Western Caspian University</h3>
-                    <p>Faculty of Information Technologies</p>
-                </div>
-                <div class="education-card">
-                    <h3>State Oil and Industry University (ADNSU)</h3>
-                    <p>College of Industry and Technology</p>
-                </div>
-                <div class="education-card">
-                    <h3>Step IT Academy</h3>
-                    <p>Cybersecurity Faculty</p>
-                </div>
-                <div class="education-card">
-                    <h3>School No. 26</h3>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="section" data-aos="fade-left">
+      <h2>Training & Certifications</h2>
+      <div class="item">
+        <strong>CompTIA A+</strong><br>
+        (220-1101 & 220-1102)
+      </div>
+      <div class="item">
+        <strong>MD-102: Endpoint Administrator</strong>
+      </div>
+    </div>
 
-    <section class="training" data-aos="fade-up">
-        <div class="container">
-            <h2>Education and Training</h2>
-            <ul>
-                <li>CompTIA A+ training courses (CompTIA A+ 220-1101 and 220-1102)</li>
-                <li>MD-102: Endpoint Administrator</li>
-            </ul>
-        </div>
-    </section>
+    <div class="section" data-aos="fade-up">
+      <h2>Volunteer Experience</h2>
+      <div class="item">
+        <strong>Formula 1 as a BCC volunteer</strong><br>
+        2023
+      </div>
+    </div>
 
-    <section class="volunteer" data-aos="fade-up">
-        <div class="container">
-            <h2>Volunteer</h2>
-            <div class="volunteer-card">
-                <h3>Formula 1</h3>
-                <p>BCC Volunteer - 2023</p>
-            </div>
-        </div>
-    </section>
+    <div class="section contact-info" data-aos="zoom-in">
+      <h2>Contact Information</h2>
+      <p><strong>Email:</strong> aksenru@insol.az</p>
+      <p><strong>Phone:</strong> (+994) 559102015 (Work)</p>
+      <p><strong>Address:</strong> Baku, Azerbaijan</p>
+      <p><strong>Nationality:</strong> Azerbaijani</p>
+    </div>
 
-    <section class="languages" data-aos="fade-up">
-        <div class="container">
-            <h2>Languages</h2>
-            <div class="language-bar">
-                <p>Azerbaijani (Native)</p>
-                <div class="progress full"></div>
-            </div>
-            <div class="language-bar">
-                <p>Russian (Native)</p>
-                <div class="progress full"></div>
-            </div>
-            <div class="language-bar">
-                <p>English (B2)</p>
-                <div class="progress half"></div>
-            </div>
-        </div>
-    </section>
+    <footer data-aos="fade-up">
+      <p>Designed by Rustam Aksenov</p>
+    </footer>
+  </div>
 
-    <section class="contact" data-aos="fade-up">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: 453rustam003@mail.ru</p>
-            <p>Phone: (+994) 559102015 (Work)</p>
-            <p>Address: Baku, Azerbaijan</p>
-        </div>
-    </section>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
